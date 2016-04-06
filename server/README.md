@@ -1,8 +1,19 @@
-# Demo server code for MP4
-You should be able to do
-`npm install` and `nodemon server.js`
+# Starter files for MP4
 
-Nodemon does auto-reloading the same way grunt does on the frontend.
+## Setup
+Use the following commands in your vagrant development environment to get this up and running
+```
+git clone https://github.com/uiuc-web-programming/mp4_client_starter.git
+cd mp4_client_starter
+npm install
+bower install
+grunt compass
+grunt uglify
+grunt
+```
 
-You might have to install nodemon on the vagrant machine using
-`npm install -g nodemon`
+You can leave this command running in the background while development for livereloading:
+
+```bash
+grunt
+```
