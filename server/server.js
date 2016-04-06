@@ -1,15 +1,15 @@
 // Get the packages we need
 var express = require('express');
 var mongoose = require('mongoose');
-var Llama = require('./models/llama');
 var bodyParser = require('body-parser');
 var router = express.Router();
 
 //replace this with your Mongolab URL
-mongoose.connect('mongodb://localhost/mp4');
+mongoose.connect('mongodb://xuan:50337653@ds025239.mlab.com:25239/cs498taskmanager');
 
 // Create our Express application
 var app = express();
+
 
 // Use environment defined port or 4000
 var port = process.env.PORT || 4000;
@@ -18,11 +18,13 @@ var port = process.env.PORT || 4000;
 var allowCrossDomain = function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "DELETE");
   next();
 };
 app.use(allowCrossDomain);
 
 // Use the body-parser package in our application
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -30,21 +32,31 @@ app.use(bodyParser.urlencoded({
 // All our routes will start with /api
 app.use('/api', router);
 
-//Default route here
-var homeRoute = router.route('/');
 
-homeRoute.get(function(req, res) {
-  res.json({ message: 'Hello World!' });
-});
+//Define routes here
 
-//Llama route
-var llamaRoute = router.route('/llamas');
+var user = require('./api/users');
+router.get('/users', user.getAll);
+router.post('/users', user.create);
+router.options('/users', user.options);
 
-llamaRoute.get(function(req, res) {
-  res.json([{ "name": "alice", "height": 12 }, { "name": "jane", "height": 13 }]);
-});
+router.get('/users/:id', user.getOne);
+router.put('/users/:id', user.replace);
+router.delete('/users/:id', user.deleteOne);
 
-//Add more routes here
+
+var task = require('./api/tasks');
+router.get('/tasks', task.getAll);
+router.post('/tasks', task.create);
+router.options('/tasks', task.options);
+
+router.get('/tasks/:id', task.getOne);
+router.put('/tasks/:id', task.replace);
+router.delete('/tasks/:id', task.deleteOne);
+
+
+
+//End routes here
 
 // Start the server
 app.listen(port);
