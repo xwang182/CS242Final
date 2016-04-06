@@ -2,7 +2,376 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0dddc5c-8bf2-4eb7-85dd-dcde0b56d596" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/api/users.js" afterPath="$PROJECT_DIR$/server/api/users.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/models/llama.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/compass_config.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/compass_foundation_config.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0012349.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0015864.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0017136.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0017925.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0021749.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0022100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0025316.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0027977.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0031381.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0031679.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0032138.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0032551.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0032553.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0032976.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0033467.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0033870.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0034583.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0036775.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0036868.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0038355.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0038650.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0038787.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0040522.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0040897.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0041959.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0042192.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0042876.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0043014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0044079.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0044706.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0044741.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0045152.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0046250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0046268.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0046911.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0046912.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0047296.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0047396.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0047478.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0047528.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0048424.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0050083.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0050212.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0050825.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0050976.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0050986.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0051201.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0052311.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0052357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0052618.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0053125.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0053198.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0053291.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0053604.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0054215.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0054997.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0055031.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0055630.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0056172.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0056592.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0056801.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0057012.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0057115.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0058461.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0058946.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0059578.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0060196.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0060827.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0061184.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0061512.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0061722.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0062229.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0062622.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0064115.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0064116.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0066921.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0068646.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0070511.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0070735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0071315.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0071562.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0071853.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0072684.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0072890.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0073195.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0073486.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0074958.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0075148.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0075314.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0075686.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0076759.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0077416.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0078748.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0078788.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0079470.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0079944.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0080678.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0080684.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0081398.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0081505.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0082096.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0082971.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0083658.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0083922.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0083987.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0084787.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0086190.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0086250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0086879.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0087544.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0087843.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0088247.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0088763.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0089881.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0090605.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0091763.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0092005.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0092067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0093058.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0093779.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0095016.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0095327.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0095765.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0096283.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0097576.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0099685.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0101414.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0102926.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0103064.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0105236.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0105695.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0107048.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0107207.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0107290.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0108052.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0109830.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0110357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0110413.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0110912.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0111161.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0112471.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0112573.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0112641.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0113247.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0113277.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0114369.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0114709.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0114746.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0114814.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0116231.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0116282.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0117951.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0118694.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0118715.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0118799.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0119217.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0119488.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0119698.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120382.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120586.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120689.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120737.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0120815.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0133093.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0137523.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0167260.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0167261.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0167404.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0169102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0169547.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0172495.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0180093.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0198781.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0208092.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0209144.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0211915.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0245429.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0245712.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0246578.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0253474.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0266543.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0266697.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0268978.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0292490.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0317248.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0325980.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0338013.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0338564.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0347149.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0353969.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0361748.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0363163.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0364569.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0372784.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0374887.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0395169.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0401792.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0405094.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0405159.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0405508.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0407887.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0434409.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0435761.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0440963.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0457430.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0468569.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0469494.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0477348.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0482571.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0758758.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0816692.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0848228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0892769.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0910970.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0978762.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0986264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt0993846.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1028532.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1049413.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1065073.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1130884.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1187043.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1201607.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1205489.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1220719.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1255953.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1280558.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1291584.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1305806.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1345836.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1375666.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1392214.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1454029.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1504320.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1675434.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1832382.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1853728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1877832.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1954470.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt1979320.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2015381.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2024544.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2084970.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2106476.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2267998.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2278388.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2562232.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2582802.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/images/tt2802144.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/data/imdb250.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/css/foundation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.abide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.accordionMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.drilldown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.dropdownMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.equalizer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.interchange.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.magellan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.orbit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.responsiveMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.responsiveToggle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.reveal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.sticky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.toggler.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.box.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.keyboard.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.mediaQuery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.motion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.nest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.timerAndImageLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.touch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/js/foundation/foundation.util.triggers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/_settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_accordion-menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_accordion.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_breadcrumbs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_button-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_callout.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_close-button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_drilldown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_dropdown-menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_flex-video.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_label.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_media-object.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_off-canvas.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_orbit.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_progress-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_reveal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_sticky.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_switch.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_table.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_thumbnail.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_title-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_top-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/components/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_checkbox.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_error.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_fieldset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_help-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_input-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_label.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_select.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/forms/_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/foundation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/global/_global.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_classes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_column.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_flex-grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_gutter.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_position.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_row.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/grid/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/typography/_alignment.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/typography/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/typography/_helpers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/typography/_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/typography/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_breakpoint.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_color.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_selector.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_unit.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_util.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/foundation6_lib/scss/util/_value.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/partials/firstview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/partials/llamalist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/partials/secondview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/public/partials/settings.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_js/controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_js/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_js/services.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_sass/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_sass/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_sass/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/source_sass/styles.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/README.md" afterPath="$PROJECT_DIR$/client/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/README.md" afterPath="$PROJECT_DIR$/server/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/package.json" afterPath="$PROJECT_DIR$/server/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS242Final.iws" />
@@ -26,71 +395,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="1044">
-              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="324">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="522">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23880596" vertical-offset="0" max-vertical-offset="603">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/api/users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.60338986" vertical-offset="364" max-vertical-offset="1026">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -115,6 +424,7 @@
         <option value="$PROJECT_DIR$/client/source_js/controllers.js" />
         <option value="$PROJECT_DIR$/client/source_js/services.js" />
         <option value="$PROJECT_DIR$/server/api/users.js" />
+        <option value="$PROJECT_DIR$/client/app.js" />
       </list>
     </option>
   </component>
@@ -149,6 +459,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -198,28 +509,9 @@
               <option name="myItemId" value="CS242Final" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS242Final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CS242Final" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,22 +584,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -330,6 +622,86 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="1026">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="540">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="900">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="504">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="252">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1026">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="324">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="522">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="540">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="252">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
@@ -366,14 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="99" max-vertical-offset="702">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -418,14 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="702">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/source_js/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="603">
@@ -442,32 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/source_js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="324" max-vertical-offset="540">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -480,18 +812,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
+    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="900">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/api/users.js">
+    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="603">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -500,6 +832,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23880596" vertical-offset="0" max-vertical-offset="603">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60338986" vertical-offset="364" max-vertical-offset="1026">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="38" />
           <folding />
         </state>
       </provider>
