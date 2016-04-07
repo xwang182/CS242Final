@@ -1,0 +1,6 @@
+1.two players start at the same place on the map and a treasure randomly hides underneath one postion of the map
+2.two players take turns
+3.for each turn, one player could choose to move or dig
+4.if the player dig and no treasure, an arrow will appear to show the relative direction from the current postion to the treasure
+5.if the player move, he can move to any position next to it
+6. the player who dig the treasure first wins

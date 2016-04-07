@@ -1,0 +1,16 @@
+1. Run client and server
+2. Using postman to post data into http://localhost:4000/api/map
+	data format:    
+		"yTreasure": 6
+    	"xTreasure": 5
+    	"revealed": false
+    	"yLocation": 0
+    	"xLocation": 0
+2. Using postman to post data into http://localhost:4000/api/user
+	data format:
+    	"yLocation": 8
+    	"xLocation": 5
+    	"userNumber": 2
+    	"userName": "zhou"
+3. Using postman to get data from http://localhost:4000/api/map AND http://localhost:4000/api/user
+4. check whether the previous data is correctly added to the database
