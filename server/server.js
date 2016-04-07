@@ -37,26 +37,6 @@ app.use('/api', router);
 
 var user = require('./api/users');
 router.get('/users', user.getAll);
-router.post('/users', user.create);
-router.options('/users', user.options);
-
-router.get('/users/:id', user.getOne);
-router.put('/users/:id', user.replace);
-router.delete('/users/:id', user.deleteOne);
-
-
-var task = require('./api/tasks');
-router.get('/tasks', task.getAll);
-router.post('/tasks', task.create);
-router.options('/tasks', task.options);
-
-router.get('/tasks/:id', task.getOne);
-router.put('/tasks/:id', task.replace);
-router.delete('/tasks/:id', task.deleteOne);
-
-
-
-//End routes here
 
 // Start the server
 app.listen(port);
