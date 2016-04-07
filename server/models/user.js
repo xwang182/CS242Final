@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
 
 var schema = {
-	name          :  String,
-	email         :  String,
-    pendingTasks  :  [String],
-    dateCreated   :  Date
+	userName   :  String,
+	userNumber :  Number,
+    xLocation  :  Number,
+    yLocation  :  Number
 };
 
 var User = mongoose.model("User",schema);

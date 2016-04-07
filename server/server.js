@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var router = express.Router();
 
 //replace this with your Mongolab URL
-mongoose.connect('mongodb://xuan:50337653@ds025239.mlab.com:25239/cs498taskmanager');
+mongoose.connect('mongodb://cs242:cs242@ds015690.mlab.com:15690/cs242');
 
 // Create our Express application
 var app = express();
@@ -35,8 +35,14 @@ app.use('/api', router);
 
 //Define routes here
 
-var user = require('./api/users');
-router.get('/users', user.getAll);
+var map = require('./api/map');
+router.get('/map', map.getMap);
+router.post('/map', map.create);
+
+var user = require('./api/user');
+router.get('/user', user.getUser);
+router.post('/user', user.create);
+
 
 // Start the server
 app.listen(port);
