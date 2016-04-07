@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0dddc5c-8bf2-4eb7-85dd-dcde0b56d596" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/public/partials/users.html" afterPath="$PROJECT_DIR$/client/public/partials/map.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/api/users.js" afterPath="$PROJECT_DIR$/server/api/map.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/models/user.js" afterPath="$PROJECT_DIR$/server/models/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/js/app.js" afterPath="$PROJECT_DIR$/client/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/app.js" afterPath="$PROJECT_DIR$/client/source_js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/js/controllers.js" afterPath="$PROJECT_DIR$/client/public/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/controllers.js" afterPath="$PROJECT_DIR$/client/source_js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/index.html" afterPath="$PROJECT_DIR$/client/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/js/script.js" afterPath="$PROJECT_DIR$/client/public/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/public/js/services.js" afterPath="$PROJECT_DIR$/client/public/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/services.js" afterPath="$PROJECT_DIR$/client/source_js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="c0dddc5c-8bf2-4eb7-85dd-dcde0b56d596" name="Default" comment="" />
     <ignored path="CS242Final.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
