@@ -1,0 +1,23 @@
+<div>
+    <h2 class="text-center">One Task Detail</h2>
+    <a ng-href="#/tasks">
+        <button>Go back to Task Page</button>
+    </a>
+    <br>
+    <a id="userPage" ng-href="#/users/{{task.assignedUser}}">
+        <button>Go back to Assigned User Page</button>
+    </a>
+    <div class="infoDiv">
+        <div>Name : {{task.name}}</div>
+        <div>Description : {{task.description}}</div>
+        <div>Deadline : {{task.deadline}}</div>
+        <div>Completed : {{task.completed}}</div>
+        <div>AssignedUserName : {{task.assignedUserName}}</div>
+        <div>DateCreated : {{task.dateCreated}}</div>
+
+        <button class="button" ng-click="completionChange()"> Change Complete Status</button>
+        <a class="button" ng-href="#/tasks/editTask/{{task._id}}">Edit Task</a>
+        <br>
+    </div>
+
+</div>

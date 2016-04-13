@@ -1,0 +1,31 @@
+<div>
+    <h2 class="text-center">Edit Task Page</h2>
+     <a ng-href="#/tasks/{{taskId}}">
+        <button>Go Back</button>
+    </a>
+    <form>
+        <span class="red-star">★</span>
+        Task Name:<br>
+        <input type="text" name="name" ng-model="task.name">
+        <br>
+        Task Description:<br>
+        <textarea rows="5" ng-model="task.description"></textarea>
+        <br>
+        <span class="red-star">★</span>
+        Task Deadline:<br>
+        <datepicker>
+            <input ng-model="deadline" type="text"/>
+        </datepicker>
+        <br>
+        Task Completed:<br>
+        <input type="radio" ng-model="task.completed" ng-value="true">Completed<br>
+        <input type="radio" ng-model="task.completed" ng-value="false">Not yet<br>
+        <br>
+        Task AssignedUser:<br>
+        <select ng-model="AssignUser" ng-options="user.name for user in users"></select>
+        <br>
+    </form>
+    <button class="button" ng-click="edit()">Save Changes</button>
+    <div id="message"></div>
+</div>
+
