@@ -10,6 +10,25 @@ mongoose.connect('mongodb://cs242:cs242@ds015690.mlab.com:15690/cs242');
 // Create our Express application
 var app = express();
 
+var server = require('http').createServer(app);
+var io = require('socket.io')(server);
+io.on('connection', function(socket){
+  socket.on('event', function(data){
+      console.log("from client");
+
+      socket.broadcast.emit('back', {
+      username: "name",
+      numUsers: 2
+    });
+  });
+
+  socket.on('userMove', function(data){
+
+      io.sockets.emit('serverBack', {users : data} );
+  });
+
+});
+
 
 // Use environment defined port or 4000
 var port = process.env.PORT || 4000;
@@ -46,5 +65,7 @@ router.post('/user', user.create);
 
 
 // Start the server
-app.listen(port);
+//app.listen(port);
+
+server.listen(port);
 console.log('Server running on port ' + port);

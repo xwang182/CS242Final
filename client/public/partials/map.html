@@ -1,14 +1,13 @@
-<div ng-controller='MapController'>
+<div>
     <div>Map Data</div>
 
     <div>
-        <div ng-repeat="map in maps" >
-            <div>xLocation : {{map.xLocation}}</div>
-            <div>yLocation : {{map.yLocation}}</div>
-            <div>revealed : {{map.revealed}}</div>
-            <div>xTreasure : {{map.xTreasure}}</div>
-            <div>yTreasure : {{map.yTreasure}}</div>
-            <br>
+        <div ng-repeat="mapRow in map" >
+            <div class="oneRow" ng-repeat="mapCell in mapRow" >
+                <div ng-attr-id="{{ mapCell.xLocation + '-' + mapCell.yLocation }}" class="oneCell" ng-click="clickDiv(mapCell.xLocation,mapCell.yLocation)">
+
+                </div>
+            </div>
         </div>
     </div>
 
