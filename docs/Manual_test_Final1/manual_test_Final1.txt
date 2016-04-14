@@ -1,0 +1,15 @@
+1. Run client and server
+2. Open two browser at the same time and align them like “1.png”
+3. Check the interface with “1.png”
+4. click the second block in the bottom line in the left window
+5. Check the interface with “2.png”
+6. click the block with 2 at the right window
+7. Check the interface with “3.png”
+8. click the top left block in the left window
+9. Check the interface with “4.png”
+10.click the top right block at the right window
+11. check the interface with “5.png”
+12. click both user button 
+13.check the interface with “user.png”
+14.click both setting button
+15.check the interface with “setting.png” 
