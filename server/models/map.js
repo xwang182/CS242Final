@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var schema = {
+	digged  :  Boolean,
 	xLocation :  Number,
 	yLocation :  Number,
-    revealed  :  Boolean,
     xTreasure :  Number,
     yTreasure :  Number
 };

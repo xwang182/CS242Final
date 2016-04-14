@@ -2,9 +2,10 @@ var mongoose = require('mongoose');
 
 var schema = {
 	userName   :  String,
-	userNumber :  Number,
     xLocation  :  Number,
-    yLocation  :  Number
+    yLocation  :  Number,
+    digNow: Boolean,
+    turn: Boolean
 };
 
 var User = mongoose.model("User",schema);

@@ -41,6 +41,7 @@ router.post('/map', map.create);
 
 var user = require('./api/user');
 router.get('/user', user.getUser);
+router.put('/user/:id', user.replace);
 router.post('/user', user.create);
 
 
