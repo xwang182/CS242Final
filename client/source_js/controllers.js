@@ -1,6 +1,7 @@
 var mp4Controllers = angular.module('mp4Controllers', []);
 
 mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , function($scope, MapData, UserData) {
+
     $scope.map;
     $scope.mapGet;
     $scope.userGet;
@@ -16,6 +17,10 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     var socket = io('http://localhost:4000');
 
 
+    /*
+     The code below creates an empty map for two players
+     Param: rows,cols
+     */
     var createEmptyMap = function(rows,cols) {
         var arr = [];
 
@@ -43,19 +48,10 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
 
 
-    //var setMap = function(data){
-    //    $scope.mapGet=data;
-    //    //console.log($scope.maps);
-    //    var mapCell = {};
-    //    $scope.maps;
-    //    $scope.maps[mapGet.xLocation][mapGet.yLocation]=mapCell;
-    //
-    //};
-    //MapData.getMap().then(setMap);
-
-
-
-
+    /*
+     The code below sets up a basic info for two users
+     Param: data
+     */
     var setUsers = function(data){
         $scope.userGet=data;
         $scope.user1 = $scope.userGet[0];
@@ -69,6 +65,11 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $( divID2 ).html("2");
     };
 
+
+    /*
+     The code below checks the condition when the user digs
+     Param: xLocation, yLocation
+     */
 
     var checkUnderground = function(xLocation,yLocation){
         var xDiff = xLocation-$scope.xTreasure;
@@ -112,6 +113,10 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     UserData.getUser().then(setUsers);
 
 
+    /*
+     The code below handles the user dig action
+     Param: users
+     */
 
     var dig = function(user){
         var oneDug = {};
@@ -127,11 +132,21 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
     };
 
+
+    /*
+     The code below handles the user move action
+     Param: users,newX,newY
+     */
+
     var move = function(user,newX,newY){
         console.log("the user moves");
-//        user["xLocation"]=newX;
-//        user["yLocation"]=newY;
+        user["xLocation"]=newX;
+        user["yLocation"]=newY;
     };
+
+    /*
+     The code below updates user info between two clients
+     */
 
     var updateUsers = function(usersBack){
         var user1Save = usersBack[2];
@@ -165,6 +180,9 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.user2.turn = !$scope.user2.turn;
     };
 
+    /*
+     The code below controls the users action
+     */
 
     var update= function(usersBack){
         console.log("in update");
@@ -194,6 +212,11 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         console.log("get back");
         update(data.users);
     });
+
+
+    /*
+     The code below handles the conditon when user click the div on the html
+    */
 
     $scope.clickDiv =function(x,y){
         var user1Save= {};
