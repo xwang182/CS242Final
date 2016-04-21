@@ -4171,6 +4171,25 @@ table.hover tr:nth-of-type(even):hover {
   width: 50px;
   height: 50px; }
 
+/* line 14, ../../source_sass/_base.scss */
+.u1 {
+  background-image: url("../images/u1.gif");
+  background-size: 100%;
+  z-index: 10;
+  background-repeat: no-repeat; }
+
+/* line 21, ../../source_sass/_base.scss */
+.u2 {
+  background-image: url("../images/u2.gif");
+  background-size: 100%;
+  z-index: 10;
+  background-repeat: no-repeat; }
+
+/* line 29, ../../source_sass/_base.scss */
+.NW {
+  background-image: url("../images/NW.png");
+  background-size: 100%; }
+
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
   in _base.scss

@@ -8,10 +8,14 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     $scope.xTreasure = 1;
     $scope.yTreasure = 1;
     $scope.dug = [];
-    $scope.rows = 4;
-    $scope.cols = 4;
+    $scope.rows = 10;
+    $scope.cols = 10;
     $scope.user1;
     $scope.user2;
+
+    var gamePlay = false;
+
+    var myUsername;
 
 
     var socket = io('http://localhost:4000');
@@ -58,14 +62,21 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.user2 = $scope.userGet[1];
 
         var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
-        $( divID1 ).css( "border", "3px solid blue" );
-        $( divID1 ).html("1");
+        $( divID1 ).addClass( "u1" );
         var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
-        $( divID2 ).css( "border", "3px solid blue" );
-        $( divID2 ).html("2");
+        $( divID2 ).addClass( "u2" );
     };
 
 
+    $scope.startGame = function(){
+        var person = prompt("Please enter your username", "username");
+        if(person !== null){
+            myUsername =person;
+            gamePlay = true;
+            UserData.getUser().then(setUsers);
+        }
+
+    };
     /*
      The code below checks the condition when the user digs
      Param: xLocation, yLocation
@@ -110,7 +121,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
 
 
-    UserData.getUser().then(setUsers);
+
 
 
     /*
@@ -127,8 +138,56 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.dug.push(oneDug);
         $scope.map[x][y]["dug"] = true;
 
+
+        var underground=checkUnderground(x,y);
         var divID = "#" + x.toString() + "-" + y.toString();
-        $( divID ).css( "background-color", "red" );
+        switch(underground) {
+            case 0:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/W.png)');
+                break;
+            case 1:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/E.png)');
+                break;
+            case 2:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/treasure.png)');
+                if($scope.user1.turn === true){
+                    alert($scope.user1.userName + " find the treasure!");
+                }
+                else{
+                    alert($scope.user2.userName + " find the treasure!");
+                }
+                gamePlay = false;
+                break;
+            case 3:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/SW.png)');
+                break;
+            case 4:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/SE.png)');
+                break;
+            case 5:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/S.png)');
+                break;
+            case 6:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/NW.png)');
+                break;
+            case 7:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/NE.png)');
+                break;
+            case 8:
+                var _sBg = $(divID).css('background-image');
+                $(divID).css('background-image', _sBg + ', url(../images/N.png)');
+                break;
+            default:
+                $( divID ).css( "background-color", "red" );
+        }
 
     };
 
@@ -153,12 +212,10 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         var user2Save = usersBack[3];
 
         var divID1 = "#" + user1Save.xLocation.toString() + "-" + user1Save.yLocation.toString();
-        $( divID1 ).css( "border", "1px solid black" );
-        $( divID1 ).html("");
-        console.log(divID1);
+        $( divID1 ).removeClass( "u1" );
         var divID2 = "#" + user2Save.xLocation.toString() + "-" + user2Save.yLocation.toString();
-        $( divID2 ).css( "border", "1px solid black" );
-        $( divID2 ).html("");
+        $( divID2 ).removeClass( "u2" );
+
 
 
         $scope.userGet=usersBack;
@@ -166,11 +223,9 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.user2 = usersBack[1];
 
         var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
-        $( divID1 ).css( "border", "3px solid blue" );
-        $( divID1 ).html("1");
+        $( divID1 ).addClass( "u1" );
         var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
-        $( divID2 ).css( "border", "3px solid blue" );
-        $( divID2 ).html("2");
+        $( divID2 ).addClass( "u2" );
 
 
         $scope.user1.digNow = false;
@@ -219,6 +274,39 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     */
 
     $scope.clickDiv =function(x,y){
+        if(gamePlay === false){
+            alert("you haven't start the game");
+            return;
+        }
+        var turnUserName;
+        var distance;
+        var block = false;
+        if($scope.user1.turn === true){
+            turnUserName = $scope.user1.userName;
+            distance = Math.abs(x - $scope.user1.xLocation ) + Math.abs(y - $scope.user1.yLocation ) ;
+            if(x === $scope.user2.xLocation && y === $scope.user2.yLocation){
+                block = true;
+            }
+        }
+        else{
+            turnUserName = $scope.user2.userName;
+            distance = Math.abs(x - $scope.user2.xLocation ) + Math.abs(y - $scope.user2.yLocation ) ;
+            if(x === $scope.user1.xLocation && y === $scope.user1.yLocation){
+                block = true;
+            }
+        }
+        if(turnUserName !== myUsername){
+            alert("It's not your turn");
+            return;
+        }
+        if(distance > 1){
+            alert("you can not move that far");
+            return;
+        }
+        if(block === true){
+            alert("you can not move there, another player blocks you");
+            return;
+        }
         var user1Save= {};
         user1Save.xLocation = $scope.user1.xLocation;
         user1Save.yLocation = $scope.user1.yLocation;
