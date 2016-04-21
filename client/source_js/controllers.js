@@ -62,9 +62,20 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.user2 = $scope.userGet[1];
 
         var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
-        $( divID1 ).addClass( "u1" );
+//        $( divID1 ).addClass( "u1" );
+        $( divID1).css({
+            'background-image': 'url("../images/u1.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
+
         var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
-        $( divID2 ).addClass( "u2" );
+//        $( divID2 ).addClass( "u2" );
+        $( divID2).css({
+            'background-image': 'url("../images/u2.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
     };
 
 
@@ -129,7 +140,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
      Param: users
      */
 
-    var dig = function(user){
+    var dig = function(user,usersBack){
         var oneDug = {};
         var x=user["xLocation"];
         var y=user["yLocation"];
@@ -138,118 +149,99 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.dug.push(oneDug);
         $scope.map[x][y]["dug"] = true;
 
-<<<<<<< HEAD
 
         var underground=checkUnderground(x,y);
         var divID = "#" + x.toString() + "-" + y.toString();
+        var _sBg = $(divID).css('background-image');
         switch(underground) {
             case 0:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/W.png)');
+                $( divID).css({
+                    'background-image':  'url("../images/W.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
+                });
                 break;
             case 1:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/E.png)');
+                $( divID).css({
+                    'background-image':  'url("../images/E.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
+                });
                 break;
             case 2:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/treasure.png)');
-                if($scope.user1.turn === true){
+                $( divID).css({
+                    'background-image':  'url("../images/treasure.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
+                });
+                if ($scope.user1.turn === true) {
                     alert($scope.user1.userName + " find the treasure!");
                 }
-                else{
+                else {
                     alert($scope.user2.userName + " find the treasure!");
                 }
                 gamePlay = false;
                 break;
             case 3:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/SW.png)');
-                break;
-            case 4:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/SE.png)');
-                break;
-            case 5:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/S.png)');
-                break;
-            case 6:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/NW.png)');
-                break;
-            case 7:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/NE.png)');
-                break;
-            case 8:
-                var _sBg = $(divID).css('background-image');
-                $(divID).css('background-image', _sBg + ', url(../images/N.png)');
-=======
-        var underground=checkUnderground(x,y);
-        console.log("----------------")
-        console.log(x)
-        console.log(y)
-        console.log(underground)
-        console.log("----------------")
-        var divID = "#" + x.toString() + "-" + y.toString();
-        switch(underground) {
-            case 0:
-                $(divID).css({
-                    'background-image' : 'url("../images/W.png")',
-                    'background-size'  : '100%'
-                });
-                break;
-            case 1:
-                $(divID).css({
-                    'background-image' : 'url("../images/E.png")',
-                    'background-size'  : '100%'
-                });
-                break;
-            case 2:
-                alert("You find the treasure!");
-                break;
-            case 3:
-                $(divID).css({
-                    'background-image' : 'url("../images/SW.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/SW.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
                 break;
             case 4:
-                $(divID).css({
-                    'background-image' : 'url("../images/SE.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/SE.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
                 break;
             case 5:
-                $(divID).css({
-                    'background-image' : 'url("../images/S.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/S.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
                 break;
             case 6:
-                $(divID).css({
-                    'background-image' : 'url("../images/NW.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/NW.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
                 break;
             case 7:
-                $(divID).css({
-                    'background-image' : 'url("../images/NE.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/NE.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
                 break;
             case 8:
-                $(divID).css({
-                    'background-image' : 'url("../images/N.png")',
-                    'background-size'  : '100%'
+                $( divID).css({
+                    'background-image':  'url("../images/N.png"),' + _sBg ,
+                    'background-size' : '100%',
+                    'background-repeat': 'no-repeat'
                 });
->>>>>>> origin/master
                 break;
-            default:
-                $( divID ).css( "background-color", "red" );
         }
 
+
+        var user1Save = usersBack[2];
+        var user2Save = usersBack[3];
+
+
+
+        $scope.userGet=usersBack;
+        $scope.user1 = usersBack[0];
+        $scope.user2 = usersBack[1];
+
+
+        $scope.user1.digNow = false;
+        $scope.user2.digNow = false;
+
+        $scope.user1.turn = !$scope.user1.turn;
+        $scope.user2.turn = !$scope.user2.turn;
     };
 
 
@@ -272,22 +264,38 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         var user1Save = usersBack[2];
         var user2Save = usersBack[3];
 
-        var divID1 = "#" + user1Save.xLocation.toString() + "-" + user1Save.yLocation.toString();
-        $( divID1 ).removeClass( "u1" );
-        var divID2 = "#" + user2Save.xLocation.toString() + "-" + user2Save.yLocation.toString();
-        $( divID2 ).removeClass( "u2" );
-
-
-
         $scope.userGet=usersBack;
         $scope.user1 = usersBack[0];
         $scope.user2 = usersBack[1];
 
-        var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
-        $( divID1 ).addClass( "u1" );
-        var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
-        $( divID2 ).addClass( "u2" );
-
+        if(user1Save.xLocation !== $scope.user1.xLocation || user1Save.yLocation !== $scope.user1.yLocation){
+            var divID1 = "#" + user1Save.xLocation.toString() + "-" + user1Save.yLocation.toString();
+            $( divID1).css({
+                'background-image': '',
+                'background-size' : '100%',
+                'background-repeat': 'no-repeat'
+            });
+            divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
+            $( divID1).css({
+                'background-image': 'url("../images/u1.gif")',
+                'background-size' : '100%',
+                'background-repeat': 'no-repeat'
+            });
+        }
+        else{
+            var divID2 = "#" + user2Save.xLocation.toString() + "-" + user2Save.yLocation.toString();
+            $( divID2).css({
+                'background-image': '',
+                'background-size' : '100%',
+                'background-repeat': 'no-repeat'
+            });
+            divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
+            $( divID2).css({
+                'background-image': 'url("../images/u2.gif")',
+                'background-size' : '100%',
+                'background-repeat': 'no-repeat'
+            });
+        }
 
         $scope.user1.digNow = false;
         $scope.user2.digNow = false;
@@ -301,37 +309,36 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
      */
 
     var update= function(usersBack){
-        console.log("in update");
-
-
         if(usersBack[0].turn ===true){
             if(usersBack[0].digNow ===true){
-                dig(usersBack[0]);
+                dig(usersBack[0],usersBack);
             }
             else{
                 move($scope.user1,usersBack[0].xLocation,usersBack[0].yLocation);
+                updateUsers(usersBack);
+
             }
         }
         else{
             if(usersBack[1].digNow ===true){
-                dig(usersBack[1]);
+                dig(usersBack[1],usersBack);
             }
             else{
                 move($scope.user2,usersBack[1].xLocation,usersBack[1].yLocation);
+                updateUsers(usersBack);
+
             }
         }
-        updateUsers(usersBack);
     };
 
 
     socket.on('serverBack', function (data){
-        console.log("get back");
         update(data.users);
     });
 
 
     /*
-     The code below handles the conditon when user click the div on the html
+     The code below handles the condition when user click the div on the html
     */
 
     $scope.clickDiv =function(x,y){
@@ -416,7 +423,6 @@ mp4Controllers.controller('UserController', ['$scope', 'UserData'  , function($s
     $scope.users;
     var setUser = function(data){
         $scope.users=data;
-        console.log($scope.users);
     };
     UserData.getUser().then(setUser);
 
@@ -426,8 +432,6 @@ mp4Controllers.controller('UserController', ['$scope', 'UserData'  , function($s
     socket.emit('event', {message:233});
 
     socket.on('back', function (data) {
-        console.log("from server");
-        console.log(data);
 
   });
 

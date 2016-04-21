@@ -23,7 +23,25 @@ io.on('connection', function(socket){
   });
 
   socket.on('userMove', function(data){
-
+//      var user1= data[0];
+//      var User = require('./models/user');
+//      User.findByIdAndUpdate(user1._id, {
+//            $set: {
+//                xLocation   :user1.xLocation,
+//                yLocation   :user1.yLocation,
+//                turn        : !user1.turn
+//            }
+//        },
+//        function (err, data){});
+//      var user2= data[1];
+//      User.findByIdAndUpdate(user2._id, {
+//            $set: {
+//                xLocation   :user2.xLocation,
+//                yLocation   :user2.yLocation,
+//                turn        : !user2.turn
+//            }
+//        },
+//        function (err, data){});
       io.sockets.emit('serverBack', {users : data} );
   });
 
