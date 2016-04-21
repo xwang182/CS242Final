@@ -21,6 +21,18 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     var socket = io('http://localhost:4000');
 
 
+      /*
+     The code below creates the random position of the treasure
+     Param: rows,cols
+     */
+    var randomTreasure = function(rows, cols)
+    {
+        var x=Math.floor(Math.random() * cols) + 1;
+        var y=Math.floor(Math.random() * rows) + 1;
+        return [x, y];
+    };
+
+
     /*
      The code below creates an empty map for two players
      Param: rows,cols
@@ -62,7 +74,6 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.user2 = $scope.userGet[1];
 
         var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
-//        $( divID1 ).addClass( "u1" );
         $( divID1).css({
             'background-image': 'url("../images/u1.gif")',
             'background-size' : '100%',
@@ -70,7 +81,6 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             });
 
         var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
-//        $( divID2 ).addClass( "u2" );
         $( divID2).css({
             'background-image': 'url("../images/u2.gif")',
             'background-size' : '100%',
@@ -88,6 +98,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         }
 
     };
+
     /*
      The code below checks the condition when the user digs
      Param: xLocation, yLocation
