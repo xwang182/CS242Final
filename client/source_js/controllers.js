@@ -116,7 +116,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             return 8;
         }
 
-        return 8;
+        return 9;
     };
 
 
@@ -138,6 +138,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         $scope.dug.push(oneDug);
         $scope.map[x][y]["dug"] = true;
 
+<<<<<<< HEAD
 
         var underground=checkUnderground(x,y);
         var divID = "#" + x.toString() + "-" + y.toString();
@@ -184,6 +185,66 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             case 8:
                 var _sBg = $(divID).css('background-image');
                 $(divID).css('background-image', _sBg + ', url(../images/N.png)');
+=======
+        var underground=checkUnderground(x,y);
+        console.log("----------------")
+        console.log(x)
+        console.log(y)
+        console.log(underground)
+        console.log("----------------")
+        var divID = "#" + x.toString() + "-" + y.toString();
+        switch(underground) {
+            case 0:
+                $(divID).css({
+                    'background-image' : 'url("../images/W.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 1:
+                $(divID).css({
+                    'background-image' : 'url("../images/E.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 2:
+                alert("You find the treasure!");
+                break;
+            case 3:
+                $(divID).css({
+                    'background-image' : 'url("../images/SW.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 4:
+                $(divID).css({
+                    'background-image' : 'url("../images/SE.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 5:
+                $(divID).css({
+                    'background-image' : 'url("../images/S.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 6:
+                $(divID).css({
+                    'background-image' : 'url("../images/NW.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 7:
+                $(divID).css({
+                    'background-image' : 'url("../images/NE.png")',
+                    'background-size'  : '100%'
+                });
+                break;
+            case 8:
+                $(divID).css({
+                    'background-image' : 'url("../images/N.png")',
+                    'background-size'  : '100%'
+                });
+>>>>>>> origin/master
                 break;
             default:
                 $( divID ).css( "background-color", "red" );
