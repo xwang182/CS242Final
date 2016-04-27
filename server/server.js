@@ -59,6 +59,12 @@ io.on('connection', function(socket){
     });
   });
 
+  socket.on('treasurePosition', function(data){
+      console.log("randomPosition");
+
+      socket.broadcast.emit('treasureBack',{treasurePosition : data});
+  });
+
   socket.on('userMove', function(data){
       var User = require('./models/user');
       User.findByIdAndUpdate(data[0]._id, {

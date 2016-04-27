@@ -25,7 +25,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
      The code below creates the random position of the treasure
      Param: rows,cols
      */
-    var randomTreasure = function(rows, cols)
+    var randomPosition = function(rows, cols)
     {
         var x=Math.floor(Math.random() * cols) + 1;
         var y=Math.floor(Math.random() * rows) + 1;
@@ -86,6 +86,9 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             'background-size' : '100%',
             'background-repeat': 'no-repeat'
             });
+        var socket = io('http://localhost:4000');
+        console.log(randomPosition($scope.rows,$scope.cols));
+        socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
     };
 
 
@@ -345,6 +348,11 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
     socket.on('serverBack', function (data){
         update(data.users);
+    });
+
+    socket.on('treasureBack', function (data){
+        $scope.xTreasure=data.treasurePosition[0];
+        $scope.yTreasure=data.treasurePosition[1];
     });
 
 
