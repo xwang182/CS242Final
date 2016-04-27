@@ -22,7 +22,16 @@ mp4Services.factory('UserData', function($http){
                 return response.data;
             })
     };
+     var postUser = function(userId, data){
+        return $http.put(baseURL + userId, data)
+            .then(function(response){
+                return response.data;
+            })
+    };
+    
     return{
-        getUser   : getUser
+        getUser   : getUser,
+        postUser  : postUser
     }
+
 });

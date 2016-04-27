@@ -61,7 +61,11 @@ io.on('connection', function(socket){
 
   socket.on('treasurePosition', function(data){
       console.log("randomPosition");
-
+      var Map = require('./models/map');
+      var treasure = new Map();
+      treasure.xTreasure = data[0];
+      treasure.yTreasure = data[1];
+      treasure.save(function (err, data){});
       socket.broadcast.emit('treasureBack',{treasurePosition : data});
   });
 

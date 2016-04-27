@@ -10,9 +10,9 @@ var map = {
     },
     create: function(req, res){
         var map=new Map();
-        map.xLocation=req.body.xLocation;
-        map.yLocation=req.body.yLocation;
-        map.digged=req.body.digged;
+        // map.xLocation=req.body.xLocation;
+        // map.yLocation=req.body.yLocation;
+        // map.digged=req.body.digged;
         map.xTreasure=req.body.xTreasure;
         map.yTreasure=req.body.yTreasure;
         map.save(function(err,data){

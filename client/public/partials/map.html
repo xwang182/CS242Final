@@ -1,12 +1,44 @@
 <div>
-    <button class="button" ng-click="startGame()">Start Game</button>
+    
+    <div class = "text-center">
+      <button class="button " ng-click="startGame()">Start Game</button>
+      <button class="button " ng-click="contGame()">Continue Game</button>
+    </div>  
     <div>
+
+        <div class="row">
+  <div class="small-12 medium-1 large-1 columns">
+  
+  <!-- User1's {{user1.turn}}
+  User2's {{user2.turn}} -->
+  <!-- Your turn: {{showTurn}} -->
+  You are {{person}} <div id="p"> </div>
+  </div>
+  <div class="small-12 medium-8 large-8 columns text-center" >
+
+
+
         <div ng-repeat="mapRow in map" style="line-height:0">
             <div class="oneRow" ng-repeat="mapCell in mapRow" >
                 <div ng-attr-id="{{ mapCell.xLocation + '-' + mapCell.yLocation }}" class="oneCell" ng-click="clickDiv(mapCell.xLocation,mapCell.yLocation)">
 
                 </div>
             </div>
+        </div>
+      </div>
+<div class="small-12 medium-3 large-3 columns">
+Instruction:
+<ol>
+<li> Two players start at the random place on the map
+<li> A treasure randomly hides underneath one postion of the map
+<li> Two players take turns, for each turn, one player could choose to move or dig
+<li> If the player dig and no treasure, an arrow will appear to show the relative direction from the current postion to the treasure
+<li> If the player move, he can move to any position next to it
+<li> The player who dig the treasure first wins
+</oi>
+
+
+</div>
         </div>
     </div>
 

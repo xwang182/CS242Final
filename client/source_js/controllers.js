@@ -12,6 +12,31 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     $scope.cols = 10;
     $scope.user1;
     $scope.user2;
+    $scope.person;
+
+    $scope.resetGame = function(){
+        $scope.user1.xLocation = 0;
+        $scope.user1.yLocation = 0;
+        $scope.user2.xLocation = 9;
+        $scope.user2.yLocation = 9;
+        UserData.postUser($scope.user1._id,$scope.user1).then(setUsers);
+        UserData.postUser($scope.user2._id,$scope.user2).then(setUsers);
+
+    };
+    // $scope.showTurn;
+
+    // $scope.changeTurn = function(){
+    //     // if($scope.user1.turn === true && $scope.user1.userName === $scope.person){
+    //     //     $scope.showTurn = true;
+    //     //     return;
+    //     // }
+    //     // if($scope.user2.turn === true && $scope.user2.userName === $scope.person){
+    //     //     $scope.showTurn = true;
+    //     //     return;
+    //     // }
+    //     // $scope.showTurn = false;
+    //     alert($scope.showTurn);
+    // }
 
     var gamePlay = false;
 
@@ -86,21 +111,97 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             'background-size' : '100%',
             'background-repeat': 'no-repeat'
             });
-        var socket = io('http://localhost:4000');
-        console.log(randomPosition($scope.rows,$scope.cols));
-        socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
+        
+
+
     };
 
 
     $scope.startGame = function(){
-        var person = prompt("Please enter your username", "username");
-        if(person !== null){
-            myUsername =person;
+        $scope.person = prompt("Please enter your username", "username");
+        if($scope.person === "u1"){
+            $( "#p").css({
+            'height' : '30px',
+            'width'  : '30px',
+            'background-image': 'url("../images/u2.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
+            // $scope.showTurn = $scope.user1.turn;
+
+
+        }
+        if($scope.person === "u2"){
+            $( "#p").css({
+            'height' : '30px',
+            'width'  : '30px',
+            'background-image': 'url("../images/u1.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
+            // $scope.showTurn = $scope.user2.turn;
+        }
+
+        
+
+        if($scope.person !== null){
+            myUsername =$scope.person;
             gamePlay = true;
+            var socket = io('http://localhost:4000');
+            // console.log(randomPosition($scope.rows,$scope.cols));
+            // console.log()
+            socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
+        
             UserData.getUser().then(setUsers);
         }
 
     };
+
+    
+    var setMap(data){
+        var newPosition = data[data.length-1];
+        $scope.xTreasure = newPosition[0];
+        $scope.yTreasure = newPosition[1];
+
+    };
+
+    $scope.contGame = function(){
+        $scope.person = prompt("Please enter your username", "username");
+        if($scope.person === "u1"){
+            $( "#p").css({
+            'height' : '30px',
+            'width'  : '30px',
+            'background-image': 'url("../images/u2.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
+
+
+        }
+        if($scope.person === "u2"){
+            $( "#p").css({
+            'height' : '30px',
+            'width'  : '30px',
+            'background-image': 'url("../images/u1.gif")',
+            'background-size' : '100%',
+            'background-repeat': 'no-repeat'
+            });
+        }
+
+        
+
+        if($scope.person !== null){
+            myUsername =$scope.person;
+            gamePlay = true;
+            // var socket = io('http://localhost:4000');
+            // console.log(randomPosition($scope.rows,$scope.cols));
+            // socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
+            MapData.getMap().then(setMap);
+            UserData.getUser().then(setUsers);
+        }
+
+    };
+
 
     /*
      The code below checks the condition when the user digs
@@ -268,6 +369,8 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         console.log("the user moves");
         user["xLocation"]=newX;
         user["yLocation"]=newY;
+        console.log($scope.xTreasure);
+        console.log($scope.yTreasure);
     };
 
     /*
@@ -316,6 +419,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
         $scope.user1.turn = !$scope.user1.turn;
         $scope.user2.turn = !$scope.user2.turn;
+
     };
 
     /*
@@ -323,6 +427,8 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
      */
 
     var update= function(usersBack){
+        $scope.showTurn = !$scope.showTurn;
+
         if(usersBack[0].turn ===true){
             if(usersBack[0].digNow ===true){
                 dig(usersBack[0],usersBack);
@@ -348,8 +454,10 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
     socket.on('serverBack', function (data){
         update(data.users);
+
     });
 
+    $scope.$watch("showTurn", $scope.changeTurn, true);
     socket.on('treasureBack', function (data){
         $scope.xTreasure=data.treasurePosition[0];
         $scope.yTreasure=data.treasurePosition[1];
@@ -430,7 +538,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             }
         }
         socket.emit('userMove', [$scope.user1 , $scope.user2,user1Save,user2Save]);
-
+// $scope.showTurn = !$scope.showTurn;
     };
 
 
