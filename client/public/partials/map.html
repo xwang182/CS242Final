@@ -1,22 +1,12 @@
 <div>
     <button class="button" ng-click="startGame()">Start Game</button>
     <div>
-
-        <div class="row">
-  <div class="small-12 medium-2 large-2 columns">{{user1}}</div>
-  <div class="small-12 medium-8 large-8 columns">
-
-
-
         <div ng-repeat="mapRow in map" style="line-height:0">
             <div class="oneRow" ng-repeat="mapCell in mapRow" >
                 <div ng-attr-id="{{ mapCell.xLocation + '-' + mapCell.yLocation }}" class="oneCell" ng-click="clickDiv(mapCell.xLocation,mapCell.yLocation)">
 
                 </div>
             </div>
-        </div>
-      </div>
-<div class="small-12 medium-2 large-2 columns">aaa</div>
         </div>
     </div>
 

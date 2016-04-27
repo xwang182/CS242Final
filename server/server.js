@@ -11,41 +11,7 @@ mongoose.connect('mongodb://cs242:cs242@ds015690.mlab.com:15690/cs242');
 var app = express();
 
 var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-io.on('connection', function(socket){
-  socket.on('event', function(data){
-      console.log("from client");
 
-      socket.broadcast.emit('back', {
-      username: "name",
-      numUsers: 2
-    });
-  });
-
-  socket.on('userMove', function(data){
-      var user1 = jQuery.extend(true, {}, data[0]);
-      var User = require('./models/user');
-      User.findByIdAndUpdate(user1._id, {
-            $set: {
-                xLocation   :user1.xLocation,
-                yLocation   :user1.yLocation,
-                turn        : !user1.turn
-            }
-        },
-        function (err, data){});
-      var user2= jQuery.extend(true, {}, data[1]);
-      User.findByIdAndUpdate(user2._id, {
-            $set: {
-                xLocation   :user2.xLocation,
-                yLocation   :user2.yLocation,
-                turn        : !user2.turn
-            }
-        },
-        function (err, data){});
-      io.sockets.emit('serverBack', {users : data} );
-  });
-
-});
 
 
 // Use environment defined port or 4000
@@ -80,6 +46,41 @@ var user = require('./api/user');
 router.get('/user', user.getUser);
 router.put('/user/:id', user.replace);
 router.post('/user', user.create);
+
+
+var io = require('socket.io')(server);
+io.on('connection', function(socket){
+  socket.on('event', function(data){
+      console.log("from client");
+
+      socket.broadcast.emit('back', {
+      username: "name",
+      numUsers: 2
+    });
+  });
+
+  socket.on('userMove', function(data){
+      var User = require('./models/user');
+      User.findByIdAndUpdate(data[0]._id, {
+            $set: {
+                xLocation   :data[0].xLocation,
+                yLocation   :data[0].yLocation,
+                turn        : !data[0].turn
+            }
+        },
+        function (err, data){});
+      User.findByIdAndUpdate(data[1]._id, {
+            $set: {
+                xLocation   :data[1].xLocation,
+                yLocation   :data[1].yLocation,
+                turn        : !data[1].turn
+            }
+        },
+        function (err, data){});
+      io.sockets.emit('serverBack', {users : data} );
+  });
+
+});
 
 
 // Start the server
