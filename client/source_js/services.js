@@ -1,7 +1,7 @@
 var mp4Services = angular.module('mp4Services', []);
 mp4Services.factory('MapData', function($http){
     $http.defaults.headers.post["Content-Type"] = "application/json";
-    var baseURL = "http://localhost:4000/api/map/";
+    var baseURL = "http://http://162.243.29.34/:4000/api/map/";
     var getMap = function(){
         return $http.get(baseURL)
             .then(function(response){
@@ -15,7 +15,7 @@ mp4Services.factory('MapData', function($http){
 
 mp4Services.factory('UserData', function($http){
     $http.defaults.headers.post["Content-Type"] = "application/json";
-    var baseURL = "http://localhost:4000/api/user/";
+    var baseURL = "http://http://162.243.29.34/:4000/api/user/";
     var getUser = function(){
         return $http.get(baseURL)
             .then(function(response){
