@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0dddc5c-8bf2-4eb7-85dd-dcde0b56d596" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/services.js" afterPath="$PROJECT_DIR$/client/source_js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/source_js/controllers.js" afterPath="$PROJECT_DIR$/client/source_js/controllers.js" />
     </list>
     <ignored path="CS242Final.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controllers.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0769231" vertical-offset="3142" max-vertical-offset="10746">
-              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4893617" vertical-offset="10182" max-vertical-offset="10746">
+              <caret line="581" column="28" selection-start-line="581" selection-start-column="28" selection-end-line="581" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.923077" vertical-offset="532" max-vertical-offset="1890">
+            <state vertical-scroll-proportion="-28.384615" vertical-offset="0" max-vertical-offset="1890">
               <caret line="41" column="16" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="16" />
               <folding />
             </state>
@@ -85,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="774">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
               <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
               <folding />
             </state>
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/client/public/partials/map.html" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/api/user.js" />
-        <option value="$PROJECT_DIR$/client/source_js/controllers.js" />
         <option value="$PROJECT_DIR$/client/source_js/services.js" />
+        <option value="$PROJECT_DIR$/client/source_js/controllers.js" />
       </list>
     </option>
   </component>
@@ -745,26 +745,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0769231" vertical-offset="3142" max-vertical-offset="10746">
-          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.923077" vertical-offset="532" max-vertical-offset="1890">
+        <state vertical-scroll-proportion="-28.384615" vertical-offset="0" max-vertical-offset="1890">
           <caret line="41" column="16" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/source_js/services.js">
+    <entry file="file://$PROJECT_DIR$/client/source_js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08955224" vertical-offset="0" max-vertical-offset="774">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.4893617" vertical-offset="10182" max-vertical-offset="10746">
+          <caret line="581" column="28" selection-start-line="581" selection-start-column="28" selection-end-line="581" selection-end-column="28" />
           <folding />
         </state>
       </provider>

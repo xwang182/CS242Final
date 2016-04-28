@@ -579,7 +579,7 @@ mp4Controllers.controller('UserController', ['$scope', 'UserData'  , function($s
     UserData.getUser().then(setUser);
 
 
-    var socket = io('http://localhost:4000');
+    var socket = io('http://162.243.29.34:4000');
 
     socket.emit('event', {message:233});
 
