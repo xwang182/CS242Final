@@ -43,7 +43,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
     var myUsername;
 
 
-    var socket = io('http://localhost:4000');
+    var socket = io('http://162.243.29.34:4000');
 
 
       /*
@@ -168,7 +168,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         if($scope.person !== null){
             myUsername =$scope.person;
             gamePlay = true;
-            var socket = io('http://localhost:4000');
+            var socket = io('http://162.243.29.34:4000');
             // console.log(randomPosition($scope.rows,$scope.cols));
             // console.log()
             socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
