@@ -1,0 +1,42 @@
+1. Run client and server
+2. Open two browser at the same time and align them like “1.png”
+3. Check the interface with “1.png”
+4. Click the start game on the left side
+5. Check the interface with “2.png”
+6. Enter the username and click “enter”
+7. Repeat the step 4 and step 6
+8. Check the interface with “3.png”
+9. Click the blue figure in the left window
+10.Check the interface with “4.png”
+11.Click the yellow figure’s right box in the right window
+12.Check the interface with “5.png”
+13. Click the blue figure’s right box in the left window
+14.Check the interface with “6.png”
+15.Click the yellow figure in the right window
+16.Check the interface with “7.png”
+17.Click the blue figure’s bottom box in the left window
+18.Check the interface with “8.png”
+19.Click the yellow figure’s up box in the right window
+20.Check the interface with “9.png”
+19.Click the blue figure’s up box in the left window
+20.Check the interface with “10.png”
+21.Click the blue figure’s up box in the left window
+22.Check the interface with “11.png”
+22.Click the right corner of the map in the right window
+23.Check the interface with “12.png”
+22.Click the blue figure in the right window
+23.Check the interface with “13.png”
+24.Click the enter
+25.Check the interface with “14.png”
+26.Click anythere on the map
+27.Check the interface with “15.png”
+28.Redo the step 1 - step 28 to see whether the treasure changes the position
+29.Run the test on http://163.243.29.34:3000/#/map
+30.Check the interface with “16.png”
+31.Click the start game and input “u1”
+32.Check the interface with “17.png”
+33.Run antoher on http://163.243.29.34:3000/#/map
+34.Click the start game and input “u2”
+35.Check the interface with “18.png”
+
+
