@@ -25,7 +25,7 @@ var user = {
         })
     },
     replace: function(req, res){
-        console.log("Here");
+//        console.log("Here");
         User.findByIdAndUpdate(req.params.id, {
 
             $set: {
@@ -37,25 +37,25 @@ var user = {
             }
         },
         function (err, data){
-            console.log(typeof(req.body.digNow));
-            if(req.body.digNow === "true")
-            {
-                var where = {xLocation: req.body.xLocation, yLocation: req.body.yLocation}
-                Map.find(where).exec(function(err, data){
-                    // console.log("data");
-                    // console.log(data);
-                    var mapId = data[0]._id;
-                    console.log(mapId);
-                    Map.findByIdAndUpdate(mapId, {
-                        $set: {
-                            digged : true
-                        }
-                    },
-                        function(err2,data2){
-                            console.log("Change map");
-                        })
-                })
-            }
+//            console.log(typeof(req.body.digNow));
+//            if(req.body.digNow === "true")
+//            {
+//                var where = {xLocation: req.body.xLocation, yLocation: req.body.yLocation}
+//                Map.find(where).exec(function(err, data){
+//                    // console.log("data");
+//                    // console.log(data);
+//                    var mapId = data[0]._id;
+//                    console.log(mapId);
+//                    Map.findByIdAndUpdate(mapId, {
+//                        $set: {
+//                            digged : true
+//                        }
+//                    },
+//                        function(err2,data2){
+//                            console.log("Change map");
+//                        })
+//                })
+//            }
             res.json(data);
         }
         )

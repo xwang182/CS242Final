@@ -115,7 +115,28 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
 
     };
+    var setUserNew = function(data){
+        UserData.getUser().then(setUsers);
+    };
 
+
+    var setUser1 = function(data){
+        $scope.user2.xLocation = 9;
+        $scope.user2.yLocation = 9;
+        UserData.postUser($scope.user2._id,$scope.user2).then(setUserNew);
+
+    };
+
+    var resetUser = function(data){
+
+        $scope.userGet=data;
+        $scope.user1 = $scope.userGet[0];
+        $scope.user2 = $scope.userGet[1];
+
+        $scope.user1.xLocation = 0;
+        $scope.user1.yLocation = 0;
+        UserData.postUser($scope.user1._id,$scope.user1).then(setUser1);
+    };
 
     $scope.startGame = function(){
         $scope.person = prompt("Please enter your username", "username");
@@ -152,16 +173,19 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
             // console.log()
             socket.emit('treasurePosition', randomPosition($scope.rows,$scope.cols));
         
-            UserData.getUser().then(setUsers);
+            UserData.getUser().then(resetUser);
         }
 
     };
 
     
-    var setMap(data){
+    var setMap = function(data){
         var newPosition = data[data.length-1];
         $scope.xTreasure = newPosition[0];
         $scope.yTreasure = newPosition[1];
+        console.log("treasure position:");
+        console.log($scope.xTreasure);
+        console.log($scope.yTreasure);
 
     };
 
@@ -296,6 +320,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
                     alert($scope.user2.userName + " find the treasure!");
                 }
                 gamePlay = false;
+
                 break;
             case 3:
                 $( divID).css({
@@ -369,8 +394,8 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         console.log("the user moves");
         user["xLocation"]=newX;
         user["yLocation"]=newY;
-        console.log($scope.xTreasure);
-        console.log($scope.yTreasure);
+//        console.log($scope.xTreasure);
+//        console.log($scope.yTreasure);
     };
 
     /*
@@ -457,7 +482,7 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
 
     });
 
-    $scope.$watch("showTurn", $scope.changeTurn, true);
+//    $scope.$watch("showTurn", $scope.changeTurn, true);
     socket.on('treasureBack', function (data){
         $scope.xTreasure=data.treasurePosition[0];
         $scope.yTreasure=data.treasurePosition[1];
@@ -508,11 +533,11 @@ mp4Controllers.controller('MapController', ['$scope', 'MapData' ,'UserData' , fu
         var user2Save= {};
         user2Save.xLocation = $scope.user2.xLocation;
         user2Save.yLocation = $scope.user2.yLocation;
-        console.log(x,y);
+//        console.log(x,y);
         var divID1 = "#" + $scope.user1.xLocation.toString() + "-" + $scope.user1.yLocation.toString();
         $( divID1 ).css( "border", "1px solid black" );
         $( divID1 ).html("");
-        console.log(divID1);
+//        console.log(divID1);
         var divID2 = "#" + $scope.user2.xLocation.toString() + "-" + $scope.user2.yLocation.toString();
         $( divID2 ).css( "border", "1px solid black" );
         $( divID2 ).html("");
